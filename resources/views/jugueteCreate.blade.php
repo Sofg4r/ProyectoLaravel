@@ -25,7 +25,7 @@
         <div class="input-group">
         <label for="categorias">Categorías</label>
             <select id="categorias" name="categorias[]" multiple>
-                <option value="" disabled selectec>Selecciona una Edad:</option> <!-- "selected" removido porque no es adecuado en múltiples selects si se desea que el usuario elija. -->
+                <option value="" disabled selectec>Selecciona una Edad:</option> 
                 @foreach($categorias as $categoria)
                     <option value="{{ $categoria->id }}">{{ $categoria->Edad }}</option>
                 @endforeach
