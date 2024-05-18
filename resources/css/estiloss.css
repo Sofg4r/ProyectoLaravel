@@ -3,16 +3,16 @@ title{
 }
 
 :root {
-    --primary-color: #4CAF50;
+    --primary-color: #ffffff;
     --secondary-color: #FF5722;
-    --background-color: #F0F0F0;
+    --background-color: #ffffff;
     --text-color: #333;
     --heading-font-size: 2em;
     --link-color: #2196F3;
-    --link-hover-color: #1976D2;
-    --table-border-color: #ddd;
-    --table-header-background: #f2f2f2;
-    --table-row-hover-background: #f9f9f9;
+    --link-hover-color: #000000;
+    --table-border-color: #141313;
+    --table-header-background: #ff0000;
+    --table-row-hover-background: #9e83ff;
 }
 
 body {
@@ -38,6 +38,7 @@ a {
 
 a:hover {
     color: var(--link-hover-color);
+    box-shadow: 0 0 10px rgba(240, 9, 9, 0.1);
 }
 
 table {
@@ -58,4 +59,184 @@ th {
 
 tr:hover {
     background-color: var(--table-row-hover-background);
+}
+
+
+.modern-header {
+    background-color: #3c2bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.modern-header .title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.modern-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modern-header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.modern-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.modern-header nav ul li a:hover {
+    color: #f8f8f8;
+}
+
+/* Estilos para los elementos de entrada */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.input-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #7446ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #080808;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.buttons {
+    text-align: center;
+}
+
+/* Estilos para los botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-edit {
+    background-color: #4CAF50;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.containerMod {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titleM {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los elementos de entrada */
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-field input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.center-align {
+    text-align: center;
+}
+
+/* Estilos para el botón */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-large {
+    font-size: 18px;
+    padding: 15px 25px;
 }

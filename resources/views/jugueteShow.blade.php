@@ -7,16 +7,23 @@
     @vite(['resources/css/estiloss.css',])
 </head>
 <body>
-    <h1 class="title">VISTAS DE JUGUETES</h1>
-    <p>{{$juguete->Marca}}</p>
-    <p>{{$juguete->Precio}}</p>
+<div class="container">
+        <h1 class="title">VISTA DE JUGUETES</h1>
+        <div class="info">
+            <p><strong>Marca:</strong> {{$juguete->Marca}}</p>
+            <p><strong>Precio:</strong> {{$juguete->Precio}}</p>
+</div>
 
-    
+        <div class="buttons">
     <a href="/juguete/{{$juguete->id}}/edit">Modificar</a>
+    <br>
     <form method="POST" action="/juguete/{{$juguete->id}}" id="formulario">
+        <br>
         @csrf
         @method('DELETE')
-    <input type="submit" class="" name="action" value="Eliminar">
+    <button type="submit" class="btn btn-delete">Eliminar</button>
     </form>
+    </div>
+    </div>
 </body>
 </html>

@@ -7,20 +7,28 @@
     @vite(['resources/css/estiloss.css',])
 </head>
 <body>
+    <header class="modern-header">
+        <h1 class="title">JUGUETES</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="/juguete/create">Crear Juguete</a></li>
+                <li><a href="/categoria/create">Seleccionar Categoría</a></li>
+            </ul>
+        </nav>
+    </header>
+
     @if (session()->has('success'))
         <!-- <p>SE BORROOOO</p> -->
     @endif
     
-    <h1 class="title">JUGUETES</h1>
-    <a href="/juguete/create">Crear Juguete</a>
-    <a href="/categoria/create">Seleccionar Categoria</a>
     <table>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Marca</th>
                 <th>Precio</th>
-                <th>Categorias</th>
+                <th>Categorias de Edad</th>
                 <th>Ver</th>
             </tr>
         </thead>
@@ -31,12 +39,12 @@
                     <td>{{$juguete->Marca}}</td>
                     <td>{{$juguete->Precio}}</td>
                     <td>
-                    @foreach ($juguete->categorias as $Categoria)
-                        {{$categoria->Marca}}
+                    @foreach ($juguete->categorias as $categoria)
+                        {{$categoria->Edad}}
                     @endforeach
                     </td>
-                    <td><a href="/juguete/{{$juguete->id}}">IR</a></td>
-                </tr>
+                    <td><a href="/juguete/{{$juguete->id}}">MOSTRAR EL JUGUETE</a></td>
+                </tr>   
             @endforeach
         </tbody>
     </table>

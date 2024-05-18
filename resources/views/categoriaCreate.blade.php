@@ -7,17 +7,17 @@
     @vite(['resources/css/estiloss.css',])
 </head>
 <body>
-<div class="container">
+<div class="modern-header">
     <h1 class="title">INGRESAR CATEGORIA DEL JUGUETE</h1>
     <form method="POST" action="/categoria" id="formulario">
         @csrf
-        <div class="container">
-            <div class="input-field">
-                <label for="categoria">Edad</label>
+        <div class="input-group">
+            <div class="modern-header">
+                <label for="categoria">Edad:</label>
                 <input type="text" name="Edad" id="Edad"/>
             </div>
             <div class="center-align" style="margin-top: 30px;">
-                <input type="submit" name="action" value="enviar" class="btn waves-effect waves-light btn-large">
+                <input type="submit" name="action" value="Enviar" class="btn waves-effect waves-light btn-large">
             </div>
         </div>
         
